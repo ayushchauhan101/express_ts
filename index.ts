@@ -6,10 +6,6 @@ app.get("/", (_req, res) => {
 	res.send("welcome")
 })
 
-app.get("/hello", (_req, res) => {
-	res.send("Hello Full Stack")
-})
-
 app.get("/bmi", (req, res) => {
 	const params = req.query
 	let { height, weight } = params
