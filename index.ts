@@ -1,8 +1,9 @@
-const express = require("express")
+import express from "express"
 const app = express()
 
-app.get("/ping", (req, res) => {
-	res.send("pong")
+// underscore before variable to ignore warnings
+app.get("/", (_req, res) => {
+	res.send('welcome')
 })
 
 const PORT = 3000
