@@ -1,9 +1,9 @@
 import express from "express";
 const app = express();
 
-// underscore before variable to ignore warnings
 app.get("/", (_req, res) => {
-	res.send("welcome");
+	console.log("Fetched homepage");
+	res.send("hello");
 });
 
 const PORT = 3000;
